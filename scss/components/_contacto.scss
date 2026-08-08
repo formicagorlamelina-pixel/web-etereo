@@ -2,9 +2,7 @@
 @use "../utilities/mixins" as *;
 
 .contacto-contenido {
-    @include flex(column, flex-start, stretch, 2rem);
-    padding: $padding-seccion;
-    background-color: $color-acento;
+    @extend %seccion-fondo-flex;
 
     & > .contacto-inner {
         max-width: $max-width;
