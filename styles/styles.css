@@ -747,6 +747,11 @@ details p + p {
     object-fit: cover;
 }
 
+.carousel-categorias {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
 .categorias-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -815,6 +820,11 @@ details p + p {
 
     .categorias-grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .carousel-categorias {
+        max-width: 40%;
+        margin: 0 auto;
     }
 }
 
