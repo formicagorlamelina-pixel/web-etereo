@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etéreo Tejidos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg nav-etereo">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/img/logo.svg"
+              alt="Logo Etéreo Tejidos"
+              height="50"
+            />
+            Etéreo Tejidos
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/about.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/faq.html"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/hero.jpg"
+                class="d-block w-100"
+                alt="Amigurumis tejidos a crochet de Etéreo Tejidos"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/hero2.jpg"
+                class="d-block w-100"
+                alt="Colección de amigurumis de Etéreo Tejidos"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselHero"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselHero"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="con-contenedor">
+        <div class="contenedor">
+          <article>
+            <h2 class="titulo-destacados">Destacados</h2>
+            <div class="productos-destacados">
+              <article class="card">
+                <figure>
+                  <img src="assets/img/producto-1.jpg" alt="Appa producto 1" />
+                  <figcaption>La leyenda de Aang</figcaption>
+                </figure>
+                <div class="card-info">
+                  <h4>Appa</h4>
+                  <p class="precio">$40.000</p>
+                </div>
+              </article>
+
+              <article class="card">
+                <figure>
+                  <img
+                    src="assets/img/producto-2.jpg"
+                    alt="Taylor Swift Reputation producto 2"
+                  />
+                  <figcaption>Taylor Swift</figcaption>
+                </figure>
+                <div class="card-info">
+                  <h4>Reputation</h4>
+                  <p class="precio">$32.000</p>
+                </div>
+              </article>
+
+              <article class="card">
+                <figure>
+                  <img
+                    src="assets/img/producto-3.jpg"
+                    alt="Mascota personalizada producto 3"
+                  />
+                  <figcaption>Mascota personalizada</figcaption>
+                </figure>
+                <div class="card-info">
+                  <h4>Bulldog francés</h4>
+                  <p class="precio">$38.000</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="ver-mas">
+              <a href="pages/productos.html" class="btn-ver-mas"
+                >Ver todos los productos</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="seccion-video">
+        <!-- VIDEO -->
+        <div class="contenedor">
+          <article>
+            <figure>
+              <video controls>
+                <source src="assets/video/proceso.mp4" type="video/mp4" />
+                Tu navegador no soporta la reproducción de video.
+              </video>
+              <figcaption>
+                Regalá(te) un recuerdo eterno tejido a mano
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <section class="seccion-acento">
+        <!-- ENVIOS Y MEDIOS DE PAGO -->
+        <article class="info-grid">
+          <article style="grid-area: envio">
+            <figure>
+              <img
+                src="assets/img/icono-envio.png"
+                alt="Ícono de camión de envío"
+              />
+            </figure>
+            <h4>Envíos internacionales</h4>
+            <p>De Argentina al mundo.</p>
+          </article>
+
+          <article style="grid-area: pago">
+            <figure>
+              <img
+                src="assets/img/icono-pago.png"
+                alt="Ícono de tarjeta de crédito"
+              />
+            </figure>
+            <h4>Pagá con Mercado Pago o PayPal</h4>
+            <p>Rápido y seguro.</p>
+          </article>
+
+          <article style="grid-area: seguridad">
+            <figure>
+              <img
+                src="assets/img/icono-seguridad.png"
+                alt="Ícono de candado de seguridad"
+              />
+            </figure>
+            <h4>Comprá con seguridad</h4>
+            <p>Tus datos siempre protegidos.</p>
+          </article>
+        </article>
+      </section>
+
+      <section class="seccion-instagram">
+        <article>
+          <h2>Seguinos en Instagram</h2>
+          <p>
+            <a
+              href="https://www.instagram.com/etereo_tejidos/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@etereo_tejidos</a
+            >
+            · mirá nuestras últimas creaciones
+          </p>
+
+          <div class="instagram-grid">
+            <article>
+              <a
+                href="https://www.instagram.com/reel/DXNbcDFDBw8/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <figure>
+                  <img
+                    src="assets/img/ig-post-1.jpg"
+                    alt="Posteo de Instagram de Etéreo Tejidos"
+                  />
+                </figure>
+              </a>
+            </article>
+
+            <article>
+              <a
+                href="https://www.instagram.com/reel/DIkQFXWsaHO/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <figure>
+                  <img
+                    src="assets/img/ig-post-2.jpg"
+                    alt="Posteo de Instagram de Etéreo Tejidos"
+                  />
+                </figure>
+              </a>
+            </article>
+
+            <article>
+              <a
+                href="https://www.instagram.com/reel/DHWIsgWRXiQ/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <figure>
+                  <img
+                    src="assets/img/ig-post-3.jpg"
+                    alt="Posteo de Instagram de Etéreo Tejidos"
+                  />
+                </figure>
+              </a>
+            </article>
+
+            <article>
+              <a
+                href="https://www.instagram.com/etereo_tejidos/reel/DDe9l4NRICn/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <figure>
+                  <img
+                    src="assets/img/ig-post-4.jpg"
+                    alt="Posteo de Instagram de Etéreo Tejidos"
+                  />
+                </figure>
+              </a>
+            </article>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Etéreo Tejidos. Todos los derechos reservados.</p>
+      <p>
+        <a
+          href="https://www.instagram.com/etereo_tejidos/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Instagram</a
+        >
+      </p>
+    </footer>
+    <a href="#" class="btn-top">↑</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+  </body>
+</html>
