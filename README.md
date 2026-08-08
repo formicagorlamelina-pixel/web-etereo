@@ -22,8 +22,8 @@ Etéreo Tejidos es un emprendimiento de creaciones únicas hechas a mano. El sit
 
 ## Deploy
 
-[Ver sitio en vivo](https://etereo-tejidos.netlify.app)
+[Ver sitio en vivo](https://formicagorlamelina-pixel.github.io/web-etereo/)
 
 ## Repositorio
 
-[Ver en GitHub](https://github.com/formicagorlamelina-pixel/proyecto-desarrollo-web.git)
+[Ver en GitHub](https://github.com/formicagorlamelina-pixel/web-etereo.git)
