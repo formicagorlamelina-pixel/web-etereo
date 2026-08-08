@@ -1,0 +1,71 @@
+@use "../utilities/variables" as *;
+
+.faq-contenido {
+    padding: $padding-seccion;
+    max-width: 800px;
+    margin: 0 auto;
+
+    h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    & > article > p {
+        margin-bottom: 2rem;
+        color: $color-primario;
+    }
+}
+
+.faq-categoria {
+    margin-bottom: 2.5rem;
+
+    h3 {
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $color-acento;
+    }
+}
+
+details {
+    border-left: 3px solid $color-acento;
+    padding: 1rem 1.2rem;
+    margin-bottom: 0.8rem;
+    background-color: $color-fondo;
+    border-radius: 0 0.5rem 0.5rem 0;
+
+    &[open] {
+        background-color: #fff8fb;
+    }
+
+    p {
+        margin-top: 0.8rem;
+        color: $color-primario;
+        line-height: $line-height-base;
+
+        & + p {
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+summary {
+    font-family: $fuente-cuerpo;
+    font-weight: $fw-bold;
+    font-size: $fs-base;
+    color: $color-primario;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::after {
+        content: '+';
+        font-size: 1.2rem;
+        color: $color-primario;
+        transition: transform 0.3s ease;
+    }
+}
+
+details[open] summary::after {
+    content: '−';
+}

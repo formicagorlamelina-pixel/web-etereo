@@ -1,0 +1,49 @@
+@use "../utilities/variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fuente-cuerpo;
+    font-weight: $fw-regular;
+    background-color: $color-fondo;
+    color: $color-primario;
+    overflow-x: hidden;
+}
+
+:root {
+    --line-height-base: #{$line-height-base};
+    --color-primario: #{$color-primario};
+    --color-secundario: #{$color-secundario};
+    --color-acento: #{$color-acento};
+}
+
+a {
+    color: $color-secundario;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-primario;
+    }
+}
+
+section {
+    padding: $padding-seccion;
+}
+
+section.con-contenedor {
+    padding: 4rem 0;
+}
+
+.contenedor {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.seccion-acento {
+    background-color: $color-acento;
+}

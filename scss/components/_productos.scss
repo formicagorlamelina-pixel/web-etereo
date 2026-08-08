@@ -1,0 +1,46 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.productos-contenido {
+    padding: $padding-seccion;
+
+    h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    & > article > p {
+        margin-bottom: 3rem;
+        color: $color-primario;
+    }
+}
+
+.productos-categoria {
+    margin-bottom: 3rem;
+
+    h3 {
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $color-acento;
+    }
+}
+
+.productos-grid {
+    @include grid(repeat(2, 1fr), 1.5rem);
+}
+
+main .productos-intro {
+    background-color: $color-acento;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: $sombra-card;
+    margin-bottom: 3rem;
+    color: $color-primario;
+
+    a {
+        color: $color-primario;
+    }
+}
+
+.categorias-grid {
+    @include grid(1fr, 3rem);
+}

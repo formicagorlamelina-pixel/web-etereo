@@ -1,0 +1,103 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// Base mobile de productos destacados
+.productos-destacados {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+
+    .etereo-card {
+        width: 100%;
+
+        img {
+            height: 250px;
+        }
+    }
+}
+
+// Base mobile de categorías (mascotas/personalizados)
+.categorias-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+// TABLET
+@include tablet {
+
+    .productos-destacados {
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        .etereo-card {
+            flex: 1 1 0;
+            width: auto;
+
+            img {
+                height: 280px;
+            }
+        }
+    }
+
+    .info-grid {
+        grid-template-areas: "envio pago seguridad";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .about-hero {
+        & > .about-inner {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    .about-hero-imagen {
+        flex: 0 0 30%;
+        width: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .contacto-contenido > .contacto-inner {
+        flex-direction: row;
+        gap: 4rem;
+        align-items: flex-start;
+    }
+
+    .seccion-video video {
+        width: 75%;
+    }
+
+    .productos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .categorias-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// DESKTOP
+@include desktop {
+
+    .instagram-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .productos-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .productos-destacados .etereo-card img {
+        height: 320px;
+    }
+
+    .categorias-grid .carousel {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}

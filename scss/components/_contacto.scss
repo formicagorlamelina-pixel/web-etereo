@@ -1,0 +1,104 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.contacto-contenido {
+    @include flex(column, flex-start, stretch, 2rem);
+    padding: $padding-seccion;
+    background-color: $color-acento;
+
+    & > .contacto-inner {
+        max-width: $max-width;
+        margin: 0 auto;
+        width: 100%;
+        @include flex(column, flex-start, stretch, 2rem);
+    }
+}
+
+.contacto-info {
+    flex: 1;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+        color: $color-primario;
+    }
+
+    ul {
+        list-style: none;
+        @include flex(column, flex-start, stretch, 1rem);
+
+        li {
+            @include flex(row, flex-start, center, 0.8rem);
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+.contacto-form {
+    flex: 1;
+
+    h3 {
+        margin-bottom: 1.5rem;
+    }
+
+    label {
+        display: block;
+        font-size: $fs-small;
+        font-weight: $fw-semibold;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: $color-primario;
+        margin-bottom: 0.4rem;
+        margin-top: 1.2rem;
+
+        span {
+            font-weight: $fw-regular;
+            text-transform: none;
+            font-size: 0.8rem;
+            color: $color-secundario;
+        }
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 0.8rem 1rem;
+        border: 1px solid $color-acento;
+        border-radius: 0.5rem;
+        font-family: $fuente-cuerpo;
+        font-size: $fs-base;
+        color: $color-primario;
+        background-color: $color-fondo;
+        outline: none;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+            border-color: $color-secundario;
+        }
+    }
+
+    button {
+        margin-top: 1.5rem;
+        padding: 0.8rem 2rem;
+        background-color: $color-secundario;
+        color: $color-fondo;
+        border: none;
+        border-radius: $border-radius-btn;
+        font-family: $fuente-cuerpo;
+        font-weight: $fw-semibold;
+        font-size: $fs-base;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $color-primario;
+        }
+    }
+}

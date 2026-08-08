@@ -1,0 +1,44 @@
+@use "../utilities/variables" as *;
+
+.seccion-instagram {
+    padding: 4rem 2rem 2rem 2rem;
+    text-align: center;
+    background-color: $color-fondo;
+
+    h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    & > article > p {
+        color: $color-secundario;
+        margin-bottom: 2rem;
+    }
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    margin-bottom: 0;
+    width: 100%;
+
+    article figure {
+        overflow: hidden;
+        border-radius: 0;
+
+        img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    a {
+        display: block;
+    }
+}

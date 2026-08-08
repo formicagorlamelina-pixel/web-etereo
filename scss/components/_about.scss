@@ -1,0 +1,57 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.about-hero {
+    @include flex(column, flex-start, stretch, 2rem);
+    padding: $padding-seccion;
+    background-color: $color-acento;
+
+    & > .about-inner {
+        max-width: $max-width;
+        margin: 0 auto;
+        width: 100%;
+        @include flex(column, flex-start, stretch, 2rem);
+    }
+}
+
+.about-hero-texto {
+    flex: 1;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+.about-hero-imagen {
+    width: 100%;
+
+    img {
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+        border-radius: $border-radius-card;
+        object-fit: cover;
+    }
+
+    figcaption {
+        text-align: center;
+        font-style: italic;
+        font-size: $fs-small;
+        color: $color-secundario;
+        margin-top: 0.5rem;
+    }
+}
+
+.about-cta {
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+    background-color: $color-fondo;
+    border-radius: 0.5rem;
+    font-weight: $fw-semibold;
+    color: $color-primario;
+    text-align: center;
+}

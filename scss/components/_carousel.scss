@@ -1,0 +1,15 @@
+@use "../utilities/variables" as *;
+
+.productos-categoria {
+    .carousel {
+        border-radius: $border-radius-card;
+        overflow: hidden;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+}

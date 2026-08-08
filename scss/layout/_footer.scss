@@ -1,0 +1,21 @@
+@use "../utilities/variables" as *;
+
+footer {
+    background-color: $color-primario;
+    color: $color-fondo;
+    text-align: center;
+    padding: 2rem;
+
+    p {
+        color: $color-fondo;
+        font-size: $fs-small;
+    }
+
+    a {
+        color: $color-acento;
+
+        &:hover {
+            color: $color-fondo;
+        }
+    }
+}
