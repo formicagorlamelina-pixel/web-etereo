@@ -187,11 +187,12 @@ footer a:hover {
   font-family: "Source Sans 3", sans-serif;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .btn-ver-mas:hover {
   background-color: #17070d;
   color: #ffffff;
+  transform: scale(1.05);
 }
 .btn-ver-mas {
   padding: 0.5rem 1.5rem;
@@ -207,11 +208,12 @@ footer a:hover {
   font-family: "Source Sans 3", sans-serif;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .btn-consulta:hover {
   background-color: #17070d;
   color: #ffffff;
+  transform: scale(1.05);
 }
 .btn-consulta {
   display: block;
@@ -230,11 +232,12 @@ footer a:hover {
   font-family: "Source Sans 3", sans-serif;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .btn-instagram:hover {
   background-color: #17070d;
   color: #ffffff;
+  transform: scale(1.05);
 }
 .btn-instagram {
   padding: 0.8rem 2rem;

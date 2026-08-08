@@ -26,11 +26,12 @@
     font-family: $fuente-cuerpo;
     font-weight: $fw-semibold;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover {
         background-color: $color-primario;
         color: #ffffff;
+        transform: scale(1.05);
     }
 }
 
