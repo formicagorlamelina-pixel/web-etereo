@@ -153,6 +153,17 @@ footer a:hover {
   color: #ffffff;
 }
 
+@keyframes gradienteMovil {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .seccion-video {
   display: flex;
   justify-content: center;
@@ -168,6 +179,11 @@ footer a:hover {
   grid-template-areas: "envio" "pago" "seguridad";
   gap: 2rem;
   text-align: center;
+  background: linear-gradient(135deg, #ffcde3 0%, #ffffff 30%, #d4c4e8 100%);
+  background-size: 200% 200%;
+  animation: gradienteMovil 8s ease infinite;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
 }
 .info-grid img {
   width: 48px;
@@ -335,7 +351,7 @@ footer a:hover {
 }
 
 .seccion-instagram {
-  padding: 4rem 2rem 2rem 2rem;
+  padding: 1rem 2rem 2rem 2rem;
   text-align: center;
   background-color: #ffffff;
 }
