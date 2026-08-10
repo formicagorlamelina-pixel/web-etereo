@@ -269,6 +269,7 @@ footer a:hover {
 .card-info {
   padding: 0 1.2rem 1.2rem 1.2rem;
 }
+.card-info h3,
 .card-info h4 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
