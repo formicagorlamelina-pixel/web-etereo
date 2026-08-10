@@ -2,7 +2,7 @@
 @use "../utilities/mixins" as *;
 
 .about-hero {
-    @extend %seccion-fondo-flex;
+    @include seccion-fondo-flex;
 
     & > .about-inner {
         max-width: $max-width;

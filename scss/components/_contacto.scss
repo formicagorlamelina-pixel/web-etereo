@@ -2,7 +2,7 @@
 @use "../utilities/mixins" as *;
 
 .contacto-contenido {
-    @extend %seccion-fondo-flex;
+    @include seccion-fondo-flex;
 
     & > .contacto-inner {
         max-width: $max-width;
