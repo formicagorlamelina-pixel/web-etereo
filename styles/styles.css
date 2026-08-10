@@ -49,7 +49,7 @@ section.con-contenedor {
 .contenedor {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .seccion-acento {
@@ -630,7 +630,7 @@ details[open] summary::after {
 }
 
 .productos-contenido {
-  padding: 4rem 2rem;
+  padding: 3rem 1rem;
 }
 .productos-contenido h2 {
   margin-bottom: 0.5rem;
@@ -651,7 +651,7 @@ details[open] summary::after {
 
 .productos-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
@@ -692,6 +692,11 @@ main .productos-intro a {
   gap: 3rem;
 }
 
+@media (min-width: 480px) {
+  .productos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (min-width: 768px) {
   .productos-destacados {
     flex-direction: row;

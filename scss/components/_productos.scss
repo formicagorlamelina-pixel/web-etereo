@@ -2,7 +2,7 @@
 @use "../utilities/mixins" as *;
 
 .productos-contenido {
-    padding: $padding-seccion;
+    padding: 3rem 1rem;
 
     h2 {
         margin-bottom: 0.5rem;
@@ -25,7 +25,7 @@
 }
 
 .productos-grid {
-    @include grid(repeat(2, 1fr), 1.5rem);
+    @include grid(1fr, 1.5rem);
 }
 
 main .productos-intro {
