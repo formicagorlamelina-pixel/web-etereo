@@ -339,6 +339,7 @@ footer a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0;
+  line-height: 0;
   margin-bottom: 0;
   width: 100%;
 }
@@ -347,6 +348,7 @@ footer a:hover {
   border-radius: 0;
 }
 .instagram-grid article figure img {
+  display: block;
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
