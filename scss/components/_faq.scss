@@ -1,5 +1,16 @@
 @use "../utilities/variables" as *;
 
+@keyframes fadeInDetail {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .faq-contenido {
     padding: $padding-seccion;
     max-width: 800px;
@@ -47,6 +58,10 @@ details {
     }
 }
 
+details[open] p {
+    animation: fadeInDetail 0.3s ease;
+}
+
 summary {
     font-family: $fuente-cuerpo;
     font-weight: $fw-bold;
@@ -59,13 +74,13 @@ summary {
     align-items: center;
 
     &::after {
-        content: '+';
-        font-size: 1.2rem;
-        color: $color-primario;
-        transition: transform 0.3s ease;
+    content: '❮';
+    font-size: 0.9rem;
+    color: $color-primario;
+    transition: transform 0.3s ease;
     }
 }
 
 details[open] summary::after {
-    content: '−';
+    transform: rotate(-90deg);
 }
