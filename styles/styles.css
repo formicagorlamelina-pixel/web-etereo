@@ -194,6 +194,18 @@ footer a:hover {
   margin-bottom: 0.5rem;
 }
 
+.info-envio {
+  grid-area: envio;
+}
+
+.info-pago {
+  grid-area: pago;
+}
+
+.info-seguridad {
+  grid-area: seguridad;
+}
+
 .btn-instagram, .btn-consulta, .btn-ver-mas {
   display: inline-block;
   border-radius: 2rem;
