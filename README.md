@@ -16,14 +16,25 @@ Etéreo Tejidos es un emprendimiento de creaciones únicas hechas a mano. El sit
 
 ## Tecnologías utilizadas
 
-- HTML5
-- SCSS/CSS3
+- HTML5 semántico
+- SCSS (variables, mixins, @extend, nesting, partials organizados con @use)
 - Bootstrap
+- Animaciones nativas y AOS/Animate.css
+- Diseño responsive mobile-first (mobile, tablet, desktop)
+
+## Estructura del proyecto
+
+├── assets/ # imágenes y recursos
+├── scss/ # partials y main.scss
+├── styles/ # CSS compilado
+├── pages/ # páginas secundarias
+└── index.html
 
 ## Deploy
 
-[Ver sitio en vivo](https://formicagorlamelina-pixel.github.io/web-etereo/)
+- [Ver sitio en vivo (Netlify)](https://etereotejidos.netlify.app/)
+- [Ver sitio en vivo (GitHub Pages)](https://formicagorlamelina-pixel.github.io/web-etereo/)
 
 ## Repositorio
 
-[Ver en GitHub](https://github.com/formicagorlamelina-pixel/web-etereo.git)
+[Ver en GitHub](https://github.com/formicagorlamelina-pixel/web-etereo)
