@@ -167,11 +167,24 @@ footer a:hover {
 .seccion-video {
   display: flex;
   justify-content: center;
-  padding: 4rem 2rem;
+  padding: 2rem 4rem 2rem;
 }
 .seccion-video video {
+  display: block;
   width: 100%;
+  margin: 0 auto;
   border-radius: 1rem;
+}
+.seccion-video .video-horizontal {
+  display: none;
+}
+.seccion-video figcaption {
+  text-align: center;
+  padding-top: 2rem;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  color: #17070d;
+  font-size: 1.2rem;
 }
 
 .info-grid {
@@ -723,6 +736,13 @@ main .productos-intro a {
     align-items: flex-start;
   }
   .seccion-video video {
+    width: 75%;
+  }
+  .seccion-video .video-vertical {
+    display: none;
+  }
+  .seccion-video .video-horizontal {
+    display: block;
     width: 75%;
   }
   .productos-grid {

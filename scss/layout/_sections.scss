@@ -16,11 +16,26 @@
 .seccion-video {
     display: flex;
     justify-content: center;
-    padding: $padding-seccion;
+    padding: 2rem $padding-seccion;
 
     video {
+        display: block;
         width: 100%;
+        margin: 0 auto;
         border-radius: $border-radius-card;
+    }
+
+    .video-horizontal {
+        display: none;
+    }
+
+    figcaption {
+        text-align: center;
+        padding-top: 2rem;
+        font-family: $fuente-cuerpo;
+        font-weight: $fw-semibold;
+        color: $color-primario;
+        font-size: $fs-h4;
     }
 }
 

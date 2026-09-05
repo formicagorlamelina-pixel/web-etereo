@@ -81,6 +81,17 @@
         width: 75%;
     }
 
+    .seccion-video {
+        .video-vertical {
+            display: none;
+        }
+
+        .video-horizontal {
+            display: block;
+            width: 75%;
+        }
+    }
+    
     .productos-grid {
         grid-template-columns: repeat(3, 1fr);
     }
